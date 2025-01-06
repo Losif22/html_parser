@@ -12,6 +12,14 @@ std::string HTMLTagParser::parseTitle(const std::string& html_content) {
     return "";
 }
 
+std::string HTMLTagParser::parseBody(const std::string& html_content) {
+    std::smatch match;
+    if (std::regex_search(html_content, match, body_regex)) {
+        return match[1];
+    }
+    return "";
+}
+
 std::string getHTMLVersion(const std::string& html_content) {
     std::regex html5_regex("<!DOCTYPE\\s+html>", std::regex::icase);
     std::regex html4_regex("<!DOCTYPE\\s+HTML\\s+PUBLIC\\s+\"-//W3C//DTD\\s+HTML\\s+4\\.01//EN\"", std::regex::icase);
@@ -68,6 +76,7 @@ HTMLParser::~HTMLParser() {
 void HTMLParser::getHTMLData() {
     std::string version = getHTMLVersion(html_content);
     std::string title = html_tags.parseTitle(html_content);
+    std::string body = html_tags.parseBody(html_content);
     std::string lang = html_tags.parseLang(html_content);
     std::string encoding = html_tags.parseEncoding(html_content);
 
@@ -75,5 +84,6 @@ void HTMLParser::getHTMLData() {
     std::cout << "Мова сторінки: " << lang << "\n";
     std::cout << "Кодування сторінки: " << encoding << "\n";
     std::cout << "Назва сторінки: " << title << "\n";
+    std::cout << "Body код: \n(" << body << ");\n";
 
 }

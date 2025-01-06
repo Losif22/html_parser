@@ -13,11 +13,13 @@ struct HTMLTagParser {
     std::regex title_regex{ "<title>(.*?)</title>" };
     std::regex lang_regex{ "<html.*?lang=\"([^\"]+)\"" };
     std::regex encoding_regex{ "<meta.*?charset=\"([^\"]+)\"" };
+    std::regex body_regex{ R"(<body[^>]*>([\s\S]*?)</body>)" };
 
 
     std::string parseTitle(const std::string& html_content);
     std::string parseLang(const std::string& html_content);
     std::string parseEncoding(const std::string& html_content);
+    std::string parseBody(const std::string& html_content);
 };
 
 class HTMLParser {
