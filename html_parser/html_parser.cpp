@@ -106,4 +106,4 @@ void HTMLParser::getHTMLData() {
         std::cout << "Клас: " << button.first << ", Текст: " << button.second << "\n";
     }
 
-}
+} 
