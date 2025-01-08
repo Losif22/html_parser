@@ -95,13 +95,13 @@ void HTMLParser::getHTMLData() {
     std::string encoding = html_tags.parseEncoding(html_content);
     std::vector<std::pair<std::string, std::string>> buttons = html_tags.parseButtons(html_content);
 
-    std::cout << "Версія HTML: " << version << "\n";
-    std::cout << "Мова сторінки: " << lang << "\n";
-    std::cout << "Кодування сторінки: " << encoding << "\n";
-    std::cout << "Назва сторінки: " << title << "\n";
+    std::cout << "Версiя HTML: " << version << "\n";
+    std::cout << "Мова сторiнки: " << lang << "\n";
+    std::cout << "Кодування сторiнки: " << encoding << "\n";
+    std::cout << "Назва сторiнки: " << title << "\n";
     std::cout << "Body код: \n(" << body << ");\n";
 
-    std::cout << "Кнопки на сторінці:\n";
+    std::cout << "Кнопки на сторiнцi:\n";
     for (const auto& button : buttons) {
         std::cout << "Клас: " << button.first << ", Текст: " << button.second << "\n";
     }
