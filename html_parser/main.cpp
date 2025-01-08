@@ -10,7 +10,7 @@ int main() {
     setlocale(LC_ALL, "uk_UA");
     HTMLParser parser("index.html");
     parser.getHTMLData();
-    std::cout << "\nНатисніть будь-яку клавішу щоб закрити програму\n";
+    std::cout << "\nНатиснiть будь-яку клавішу щоб закрити програму\n";
     system("pause>nul");
     return 0;
 }
