@@ -17,7 +17,7 @@ std::string HTMLTagParser::parseBody(const std::string& html_content) {
     if (std::regex_search(html_content, match, body_regex)) {
         return match[1];
     }
-    return "";
+    return ""; 
 }
 
 std::string getHTMLVersion(const std::string& html_content) {
