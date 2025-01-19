@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "html_parser\\html_parser.cpp",
               "ToolTip": "C:\\Users\\kaptu\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\projects\\html_parser\\html_parser\\html_parser.cpp",
               "RelativeToolTip": "html_parser\\html_parser.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-04T08:00:02.863Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "html_parser\\html_parser.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-01-04T07:59:21.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-04T07:59:21.598Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "html_parser\\main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-04T07:58:29.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-04T07:58:29.309Z"
             }
           ]
         }
