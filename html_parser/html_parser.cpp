@@ -26,7 +26,7 @@ std::string getHTMLVersion(const std::string& html_content) {
     std::regex xhtml_regex("<!DOCTYPE\\s+html\\s+PUBLIC\\s+\"-//W3C//DTD\\s+XHTML\\s+1\\.0\\s+Strict//EN\"", std::regex::icase);
 
     if (std::regex_search(html_content, html5_regex)) {
-        return "HTML5";
+        return "HTML5"; 
     }
     else if (std::regex_search(html_content, html4_regex)) {
         return "HTML 4.01";
